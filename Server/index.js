@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import initDatabase from "./dbInit.js";
+import router from "./routes/jwtAuth.js";
 
 const app = express();
 const port = 3000;
@@ -9,9 +10,9 @@ const port = 3000;
 app.use(cors());
 app.use(express.json());
 
-//test route
-app.get("/api", (req, res) => res.send("Hello World!"));
-
+//ROUTES
+//Authentication routes routes
+app.use("/auth", router);
 // Initialize database and start server
 const startServer = async () => {
   try {
