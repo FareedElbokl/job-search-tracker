@@ -2,6 +2,8 @@ import express from "express";
 import cors from "cors";
 import initDatabase from "./dbInit.js";
 import router from "./routes/jwtAuth.js";
+import routerApplication from "./routes/jobApplication.js";
+import routerDashboard from "./routes/Dashboard.js";
 
 const app = express();
 const port = 3000;
@@ -13,6 +15,9 @@ app.use(express.json());
 //ROUTES
 //Authentication routes routes
 app.use("/auth", router);
+app.use("/applications", routerApplication);
+app.use("/dashboard", routerDashboard);
+
 // Initialize database and start server
 const startServer = async () => {
   try {

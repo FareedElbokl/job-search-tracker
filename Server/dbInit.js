@@ -71,10 +71,35 @@ const createApplicationsTable = async () => {
   }
 };
 
+const insertDefaultStatuses = async () => {
+  try {
+    // Check if the ApplicationStatus table is empty
+    const result = await pool.query("SELECT COUNT(*) FROM ApplicationStatus;");
+    const count = parseInt(result.rows[0].count, 10);
+
+    // If the table is empty, insert the default statuses
+    if (count === 0) {
+      await pool.query(`
+        INSERT INTO ApplicationStatus (status_name) VALUES
+        ('Applied'),
+        ('Interview Scheduled'),
+        ('Accepted'),
+        ('Rejected');
+      `);
+      console.log("Default statuses inserted successfully");
+    } else {
+      console.log("Default statuses already exist");
+    }
+  } catch (err) {
+    console.error("Error inserting default statuses", err);
+  }
+};
+
 const initDatabase = async () => {
   await createExtension();
   await createUsersTable();
   await createApplicationStatusTable();
+  await insertDefaultStatuses();
   await createApplicationsTable();
 };
 
