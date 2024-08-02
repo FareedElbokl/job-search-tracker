@@ -1,0 +1,55 @@
+.add-applications-container {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.175);
+  margin: 0 auto;
+}
+
+.add-applications-container h2 {
+  color: #ffffff;
+}
+
+.add-application-input .MuiInputBase-root {
+  background-color: #3c3c3c;
+  color: #ffffff;
+}
+
+.add-application-input .MuiInputLabel-root {
+  color: #9e9e9e;
+}
+
+.add-application-input .MuiOutlinedInput-notchedOutline {
+  border-color: #9e9e9e;
+}
+
+.add-application-input
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #ffffff;
+}
+
+.add-application-input .MuiInputBase-input {
+  color: #ffffff;
+}
+
+.add-application-input .MuiSelect-icon {
+  color: #ffffff;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,95 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.registration-container {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 90%;
+}
+
+/* Form */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #b3b3b3;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e2e2e;
+  color: #ffffff;
+  font-size: 1rem;
+  max-width: 377px;
+}
+
+/* Button */
+.registration-button {
+  background-color: #6200ea;
+  color: #ffffff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.registration-button:hover {
+  background-color: #3700b3;
+}
+
+/* Links */
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.links a {
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #ffffff;
+}
