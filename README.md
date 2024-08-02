@@ -1,37 +1,50 @@
-# Job Application Tracker
+# Job Search Tracker
 
 ## Overview
 
-This is a job application tracking web application that allows users to manage their job applications. The application provides features for adding, updating, viewing, and deleting job applications. It includes a dashboard for visualizing application statuses and trends over time.
+This is a full stack job search tracking web application that allows users to manage their job applications. The application provides features for adding, updating, viewing, and deleting job applications. It includes a dashboard for visualizing application statuses and trends over time.
 
 ## Screenshots
 
-# Dashboard
+### Dashboard
 
-# Login/Registration
+![Dashboard](screenshots/Dashboard.png)
+![Dashboard](screenshots/DashboardCollapsed.png)
 
-# View job applications
+### Login/Registration
 
-# Create Job Applications
+![login](screenshots/loginJobSearchTracker.png)
+![register](screenshots/RegisterJST.png)
+
+### View job applications
+
+![view job application](screenshots/ViewApps1.png)
+![view job application](screenshots/ViewApps2.png)
+![view job application](screenshots/ViewApps3.png)
+
+### Create Job Applications
+
+![create job application](screenshots/AddApp1.png)
+![create job application](screenshots/AddApp2.png)
 
 ## Features
 
-Add new job applications
-Update existing job applications
-View a list of all job applications
-Delete job applications
-Dashboard with visual statistics
+- Add new job applications
+- Update existing job applications
+- View a list of all job applications
+- Delete job applications
+- Dashboard with visual statistics
 
 ## Technologies Used
 
-Backend: Node.js, Express, PostgreSQL, JWT (JSON Web Token)
-Frontend: React, Material-UI, Recharts
-Containerization: Docker, Docker Compose
+- Backend: Node.js, Express, PostgreSQL, JWT (JSON Web Token)
+- Frontend: React, Material-UI, Recharts
+- Containerization: Docker, Docker Compose
 
 # Prerequisites
 
-Docker
-Docker Compose
+- Docker
+- Docker Compose
 
 ## Running the Project with Docker
 

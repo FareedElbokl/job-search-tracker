@@ -33,7 +33,7 @@ const Data = (props) => {
 
   useEffect(() => {
     getDashboardData();
-  }, []);
+  }, [props.isAuthenticated]);
 
   return (
     <div className="data-container">
